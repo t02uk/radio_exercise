@@ -5,7 +5,7 @@ var source = require('vinyl-source-stream');
 var webserver = require('gulp-webserver');
 
 gulp.task('browserify', function() {
-  browserify('./src/index.js')
+  browserify('./src/index.js', {debug: true})
     .transform(babelify, {presets: ["es2015"]})
     .bundle()
     .on("error", function (err) { console.log("Error : " + err.message); })
