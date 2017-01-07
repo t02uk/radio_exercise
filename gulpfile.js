@@ -5,16 +5,16 @@ var source = require('vinyl-source-stream');
 var webserver = require('gulp-webserver');
 
 gulp.task('browserify', function() {
-  browserify('./src/index.js', {debug: true})
+  browserify('./js/src/index.js', {debug: true})
     .transform(babelify, {presets: ["es2015"]})
     .bundle()
     .on("error", function (err) { console.log("Error : " + err.message); })
     .pipe(source('build.js'))
-    .pipe(gulp.dest('./dest'))
+    .pipe(gulp.dest('./js/dest'))
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./src/*.js', ['browserify'])
+  gulp.watch('./js/src/*.js', ['browserify'])
 });
 
 gulp.task('webserver', function() {
