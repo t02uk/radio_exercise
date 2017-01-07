@@ -1,0 +1,58 @@
+{
+  "name": "Honoka",
+  "description": "Honoka is one of the Bootstrap original theme.",
+  "keywords": [
+    "css",
+    "sass",
+    "bootstrap",
+    "japanese",
+    "theme",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "lovelive"
+  ],
+  "author": "windyakin",
+  "homepage": "http://honokak.osaka/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/windyakin/Honoka.git"
+  },
+  "license": "MIT",
+  "moduleType": "globals",
+  "main": [
+    "dist/css/bootstrap.min.css"
+  ],
+  "ignore": [
+    "/.*",
+    "dist/assets",
+    "dist/*.html",
+    "src",
+    "CNAME"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "3.3.7",
+    "bootstrap-sass": "3.3.7"
+  },
+  "exportsOverride": {
+    "bootstrap-sass": {},
+    "bootstrap": {
+      "js": "dist/js/bootstrap.**js",
+      "fonts": "dist/fonts/**/*"
+    },
+    "jquery": {}
+  },
+  "version": "3.3.7-a",
+  "_release": "3.3.7-a",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.3.7-a",
+    "commit": "af7a6c93c92a5afd5605858b6ccce5f01d89fa12"
+  },
+  "_source": "https://github.com/windyakin/Honoka.git",
+  "_target": "v3.3.7-a",
+  "_originalSource": "Honoka",
+  "_direct": true
+}
