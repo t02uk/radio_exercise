@@ -5,11 +5,11 @@ var source = require('vinyl-source-stream');
 var webserver = require('gulp-webserver');
 
 gulp.task('browserify', function() {
-  browserify('./src/index.js', { debug: true })
-    .transform(babelify)
+  browserify('./src/index.js')
+    .transform(babelify, {presets: ["es2015"]})
     .bundle()
     .on("error", function (err) { console.log("Error : " + err.message); })
-    .pipe(source('index.js'))
+    .pipe(source('build.js'))
     .pipe(gulp.dest('./dest'))
 });
 
