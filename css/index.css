@@ -1,0 +1,57 @@
+
+div.navigator .year-month {
+
+}
+
+div.content-section {
+  padding: 1.6em;
+}
+div.content-section-sub {
+  margin-left: 10%;
+  width: 80%;
+}
+
+div.navigator {
+  width: 100%;
+  margin-bottom: 0.7em;
+}
+table.calendar {
+  border: 1px solid red;
+  width: 100%;
+}
+table.calendar th {
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 10%;
+  height: 1.9em;
+  background: #eee;
+  font-weight: 800;
+}
+table.calendar th {
+  color: #555;
+}
+table.calendar th.sun {
+  color: #e53;
+}
+table.calendar th.sat {
+  color: #36f;
+}
+table.calendar td {
+  border: 1px solid #bbb;
+  height: 5.5em;
+  padding: 6px;
+}
+table.calendar td .date {
+  text-align: left;
+}
+table.calendar td {
+  color: #444;
+  opacity: 0.5;
+}
+table.calendar td.current-month {
+  color: #000;
+  opacity: 1;
+}
+table.calendar td.today {
+  background: #ffd9d8;
+}
