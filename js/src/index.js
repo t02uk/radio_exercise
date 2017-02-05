@@ -9,10 +9,10 @@ import Player from './player';
 (function() {
   const StampBook = new Vue({
     el: '#app',
-    created: function() {
-      stampedDate: store.get('stampedDate') || [];
-      bofMonth: moment().startOf('month');
-      today; moment();
+    data: {
+      stampedDate: store.get('stampedDate') || [],
+      bofMonth: moment().startOf('month'),
+      today: moment(),
     },
     computed: {
       yearMonth: function() {
@@ -38,7 +38,6 @@ import Player from './player';
     methods: {
       moveMonth: function(offset) {
         this.bofMonth = this.bofMonth.clone().add(offset, 'month');
-        console.info(this.bofMonth);
       },
       pushStamp: function(date) {
         const jsonedDate = date.format('YYYY-MM-DD');
